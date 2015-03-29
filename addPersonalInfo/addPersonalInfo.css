@@ -1,0 +1,17 @@
+.personal-info {
+	display: none;
+	text-align: center;
+}
+.personal-info img {
+	border-radius: 25px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	width: 70%;
+}
+.personal-info button {
+	margin-top: 8px;
+}
+.visibility {
+	visibility: visible;
+	display: block;
+}
