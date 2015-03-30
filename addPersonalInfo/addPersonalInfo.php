@@ -25,8 +25,8 @@ function addScript ()
 {
 
 	echo "
-
-	<script src='wp-content/plugins/addPersonalInfo/addPersonalInfo.js'></script>
+	// Атрибут asunc запрещает браузеру блокировать загрузку страницы, если скрипт не грузится 
+	<script async src='wp-content/plugins/addPersonalInfo/addPersonalInfo.js'></script>
 
 	<link rel='stylesheet' href='wp-content/plugins/addPersonalInfo/addPersonalInfo.css'>
 
