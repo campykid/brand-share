@@ -28,7 +28,7 @@ function addScript ()
 	// Атрибут asunc запрещает браузеру блокировать загрузку страницы, если скрипт не грузится 
 	<script async src='http://vlad-khvostov.ru/wp-content/plugins/add-personal-info/add-personal-info.js'></script>
 
-	<link rel='stylesheet'http://vlad-khvostov.ru/wp-content/plugins/add-personal-info/add-personal-info.css'>
+	<link rel='stylesheet' href='http://vlad-khvostov.ru/wp-content/plugins/add-personal-info/add-personal-info.css'>
 
 
 
