@@ -52,20 +52,8 @@ $('document').ready(function  () {
 			contentCreate = true;
 		};
 
-		// Прячет/отображает
+		// Отображает
 		if (!visibility) {
-			visibility = true;	
 			$('.personal-info').slideDown(200);
-
-
-		} else {
-			$('.personal-info').slideUp(200);
-			visibility = false;	
-		}
-	})
-
-	// Эта часть кода нужна для того чтобы слайдер не скакал после того как пользователь вернулся на страницу, после просмотра соц.сети
-	$('.site-branding').click(function () {
-		$('.site-branding').trigger('hover');	
 	})
 })
