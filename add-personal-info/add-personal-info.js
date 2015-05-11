@@ -4,12 +4,8 @@
  */
 var $ = jQuery;
 $('document').ready(function  () {
-		// Видимость информации.		
-		var visibility = false;
 		// Наличие контента
 		var contentCreate = false;
-		// Кликнута ли ссылка?
-		var clicked = false;
 		// Ссылки и инфо
 		var info = {
 			photo: '<img src="http://vlad-khvostov.ru/wp-content/uploads/2015/03/khvosotv.jpg"></img>',
@@ -20,6 +16,10 @@ $('document').ready(function  () {
 			vk: {
 				src: 'https://vk.com/campykid',
 				title: 'vk.com'
+			},
+			github: {
+				src: 'https://github.com/campykid',
+				title: 'github.com'
 			},
 			
 			/**
@@ -46,14 +46,16 @@ $('document').ready(function  () {
 			wrapper.append(info.photo);
 			// Добавляет ссылку на ВК
 			wrapper.append(info.addLink(info.vk.src, info.vk.title));
-			// Добавляет ссылку ЛинкедИн
+			// Добавляет ссылку на github
+			wrapper.append( info.addLink(info.github.src, info.github.title));
+			// Добавляет ссылку на ЛинкедИн
 			wrapper.append( info.addLink(info.linked.src, info.linked.title));
+
 			// Контент во истину создан
 			contentCreate = true;
 		};
 
-		// Отображает
-		if (!visibility) {
-			$('.personal-info').slideDown(200);
+		// Отображает.
+		$('.personal-info').slideDown(200);
 	})
 })
