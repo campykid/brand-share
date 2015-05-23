@@ -35,7 +35,7 @@ $('document').ready(function  () {
 			}
 		}
 
-	$('.site-branding').hover(function () {
+	$('.site-branding').mouseenter(function () {
 		if (!contentCreate) {
 			// Обертка для выпадающего меню
 			var wrapper = $('<div class="personal-info">');
@@ -55,7 +55,11 @@ $('document').ready(function  () {
 			contentCreate = true;
 		};
 
-		// Отображает.
+		// Отображает информацию.
 		$('.personal-info').slideDown(200);
+	})
+	// Скрывает информацию.
+	$('.site-branding').mouseleave(function () {
+		$('.personal-info').slideUp(200);
 	})
 })
